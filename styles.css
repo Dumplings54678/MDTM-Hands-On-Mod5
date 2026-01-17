@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:500,700");
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #850825;
+    color: #fbccbf;
+    margin: 0px;
+    background-image: url("candy.png");
+    background-size: 245px 380px;
+    background-position: right top;
+    background-repeat: repeat-y;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fbccbf;
+}
+
+.header h1 {
+    font-family: "Playfair Display", serif;
+    color: #fcba63;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 2.5em;
+}
+
+.header .subtitle {
+    color: #fbccbf;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: #730720;
+    border-radius: 8px;
+    padding: 25px;
+    flex: 1 1 100%;
+    border: 2px solid #fbccbf;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fcba63;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fbccbf;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-title i {
+    color: #fbccbf;
+}
+
+/* Input String Styling */
+.input-string {
+    color: #fcba63;
+    font-size: 0.9rem;
+    margin: 10px 0 15px 0;
+    font-style: italic;
+    padding: 5px 0;
+    border-bottom: 1px dotted #fbccbf;
+}
+
+/* Tables */
+table {
+    background-color: #850825;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #fbccbf;
+    border-spacing: 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    padding: 12px 15px;
+    background-color: #fbccbf;
+    color: #850825;
+    font-weight: 700;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(251, 204, 191, 0.2);
+    vertical-align: top;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Function Name Styling */
+.function-name {
+    font-weight: 700;
+    color: #fcba63;
+    letter-spacing: 0.5px;
+}
+
+/* Output Styling */
+.output {
+    background-color: #850825;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border-left: 3px solid #fcba63;
+    font-family: 'Courier New', monospace;
+    word-break: break-word;
+    color: #fbccbf;
+    border: 1px solid rgba(251, 204, 191, 0.3);
+}
+
+.description {
+    color: #fbccbf;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Code Example */
+.code-example {
+    background-color: #730720;
+    color: #fbccbf;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    border: 2px solid #fbccbf;
+}
+
+.code-example h3 {
+    color: #fcba63;
+    margin-bottom: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #730720;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 2px solid #fbccbf;
+    color: #fbccbf;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+    
+    .card-full {
+        flex: 1 1 100%;
+    }
+}
+
+/* Links */
+a {
+    color: #fbccbf;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+}
+
+nav {
+    padding: 0.5em;
+    background-color: #730720;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    padding: .5em;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Button Styling (for potential future use) */
+.button {
+    background-color: #fbccbf;
+    color: #850825;
+    border-color: #fbccbf;
+    border-radius: 300px;
+    -webkit-transition: .3s background-color linear;
+    -moz-transition: .3s background-color linear;
+    -o-transition: .3s background-color linear;
+    transition: .3s background-color linear;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #fcba63;
+    border-radius: 300px;
+    -webkit-transition: .1s background-color linear;
+    -moz-transition: .1s background-color linear;
+    -o-transition: .1s background-color linear;
+    transition: .1s background-color linear;
+    color: #850825;
+}
